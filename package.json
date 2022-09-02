@@ -1,0 +1,15 @@
+{
+  "name": "@oat-sa/pci-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pci:runtime": "hygen pci runtime",
+    "pci:creator": "hygen pci creator"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hygen": "^6.2.8"
+  }
+}
