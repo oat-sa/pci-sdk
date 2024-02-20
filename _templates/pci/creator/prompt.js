@@ -1,6 +1,8 @@
 const path = require("path");
 const fs = require("fs");
 
+const reIdentifier = /^[_a-zA-Z][_a-zA-Z0-9]*$/;
+
 module.exports = [
     {
         type: "input",
@@ -19,6 +21,12 @@ module.exports = [
         type: "input",
         name: "typeIdentifier",
         message: "What's the PCI typeIdentifier?",
+        validate: value => {
+            if (!reIdentifier.test(value)) {
+                return `${value} is not a valid identifier`;
+            }
+            return true;
+        }
     },
     {
         type: "input",
