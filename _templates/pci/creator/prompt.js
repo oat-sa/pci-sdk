@@ -2,6 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 const reIdentifier = /^[_a-zA-Z][_a-zA-Z0-9]*$/;
+const reVersion = /^\d+\.\d+\.\d+$/;
 
 module.exports = [
     {
@@ -24,6 +25,18 @@ module.exports = [
         validate: value => {
             if (!reIdentifier.test(value)) {
                 return `${value} is not a valid identifier`;
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
+        name: 'version',
+        message: "What's the PCI version?",
+        initial: '0.0.1',
+        validate: value => {
+            if (!reVersion.test(value)) {
+                return `${value} is not a valid version number`;
             }
             return true;
         }

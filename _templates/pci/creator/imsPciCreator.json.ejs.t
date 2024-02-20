@@ -6,7 +6,7 @@ to: <%=root%>/<%=typeIdentifier%>/imsPciCreator.json
     "typeIdentifier": "<%=typeIdentifier%>",
     "label": "<%=label%>",
     "description": "<%=description%>",
-    "version": "0.1.0",
+    "version": "<%=version%>",
     "author": "OAT SA",
     "email": "contact@taotesting.com",
     "tags": [],
