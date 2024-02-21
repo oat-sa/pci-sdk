@@ -32,6 +32,13 @@ define([
          */
         getInstance(dom, config, state) {
 
+            let answer = <%=jsonDefault%>;
+
+            /** TODO: implement me */
+            console.log('Config', config);
+            console.log('State', state);
+            console.log('DOM', dom);
+
             const myInteraction = {
 
                 /**
@@ -39,7 +46,7 @@ define([
                  * @returns {Object} PCI formatted response
                  */
                 getResponse() {
-                    return { <%=jsonCardinality%> : <%=jsonDefault%> };
+                    return { <%=jsonCardinality%> : answer };
                 },
 
                 /**
@@ -47,19 +54,22 @@ define([
                  * @returns {Object}
                  */
                 getState() {
-                    return { response : { <%=jsonCardinality%> : <%=jsonDefault%> } };
+                    return { response : { <%=jsonCardinality%> : answer } };
                 },
 
                 /**
                  * Called back before the interaction destroys
                  */
                 oncompleted() {
-
+                    /** TODO: implement me */
+                    console.log('oncompleted called');
                 }
             };
 
             //callback when the PCI is ready to be used
-            config.onready(myInteraction);
+            if (typeof config.onready === 'function') {
+                config.onready(myInteraction, state);
+            }
         }
     });
 });
