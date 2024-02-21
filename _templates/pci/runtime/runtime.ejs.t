@@ -46,7 +46,7 @@ define([
                  * @returns {Object} PCI formatted response
                  */
                 getResponse() {
-                    return { <%=jsonCardinality%> : answer };
+                    return { <%=jsonCardinality%> : { <%=baseType%>: answer} };
                 },
 
                 /**
@@ -54,7 +54,7 @@ define([
                  * @returns {Object}
                  */
                 getState() {
-                    return { response : { <%=jsonCardinality%> : answer } };
+                    return { response : { <%=jsonCardinality%> : { <%=baseType%>: answer} } };
                 },
 
                 /**
