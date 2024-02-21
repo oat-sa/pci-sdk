@@ -31,6 +31,6 @@
         "SDK"
     ],
     "dependencies": {
-        "hygen": "^6.2.8"
+        "hygen": "^6.2.11"
     }
 }
