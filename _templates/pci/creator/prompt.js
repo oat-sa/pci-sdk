@@ -64,8 +64,5 @@ module.exports = [
         initial: 'string',
         choices: ['boolean', 'integer', 'float', 'string', 'point', 'pair', 'directedPair', 'duration', 'file', 'uri', 'identifier', 'intOrIdentifier'],
         message: "What's the type of the PCI response?"
-    },
-    {
-
     }
 ];
