@@ -13,7 +13,8 @@
     },
     "scripts": {
         "pci:runtime": "hygen pci runtime",
-        "pci:creator": "hygen pci creator"
+        "pci:creator": "hygen pci creator",
+        "pci:install": "hygen pci install"
     },
     "author": "Open Assessment Technologies",
     "license": "GPL-2.0",

@@ -45,11 +45,23 @@ module.exports = [
         type: "input",
         name: "label",
         message: "What's the PCI name to display?",
+        validate: value => {
+            if (!value.trim()) {
+                return `The label is mandatory. If you omit it, the TAO installer will refuse to install the PCI!`;
+            }
+            return true;
+        }
     },
     {
         type: "input",
         name: "description",
         message: "What does the PCI do?",
+        validate: value => {
+            if (!value.trim()) {
+                return `The description is mandatory. If you omit it, the TAO installer will refuse to install the PCI!`;
+            }
+            return true;
+        }
     },
     {
         type: 'select',
