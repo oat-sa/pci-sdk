@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/creator/widget/states.js
+to: <%=root%>/<%=typeIdentifier%>/creator/widget/states/states.js
 ---
 define([
     'taoQtiItem/qtiCreator/widgets/states/factory',
