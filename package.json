@@ -1,15 +1,36 @@
 {
-  "name": "@oat-sa/pci-sdk",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "pci:runtime": "hygen pci runtime",
-    "pci:creator": "hygen pci creator"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "hygen": "^6.2.8"
-  }
+    "name": "@oat-sa/pci-sdk",
+    "version": "0.0.0",
+    "displayName": "PCI Development Kit for TAO",
+    "description": "PCI Software Development Kit",
+    "files": [
+        "_templates",
+        "LICENSE",
+        "README.md"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "pci:runtime": "hygen pci runtime",
+        "pci:creator": "hygen pci creator"
+    },
+    "author": "Open Assessment Technologies",
+    "license": "GPL-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oat-sa/pci-sdk.git"
+    },
+    "bugs": {
+        "url": "https://github.com/oat-sa/pci-sdk/issues"
+    },
+    "homepage": "https://github.com/oat-sa/pci-sdk#readme",
+    "keywords": [
+        "TAO",
+        "PCI",
+        "SDK"
+    ],
+    "dependencies": {
+        "hygen": "^6.2.11"
+    }
 }
