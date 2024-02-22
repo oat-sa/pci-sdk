@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/creator/widget/states/states.js
+to: <%=pciPath%>/<%=typeIdentifier%>/creator/widget/states/states.js
 ---
 define([
     'taoQtiItem/qtiCreator/widgets/states/factory',

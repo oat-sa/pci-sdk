@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=extension%>/scripts/install/RegisterPci<%=h.capitalize(typeIdentifier)%>.php
+to: <%=taoPath%>/<%=extension%>/scripts/install/RegisterPci<%=h.capitalize(typeIdentifier)%>.php
 ---
 <?php
 

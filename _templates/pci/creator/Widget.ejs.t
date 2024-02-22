@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/creator/widget/Widget.js
+to: <%=pciPath%>/<%=typeIdentifier%>/creator/widget/Widget.js
 ---
 define([
     'taoQtiItem/qtiCreator/widgets/interactions/customInteraction/Widget',

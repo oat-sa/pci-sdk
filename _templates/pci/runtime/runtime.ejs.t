@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/runtime/<%=typeIdentifier%>.js
+to: <%=pciPath%>/<%=typeIdentifier%>/runtime/<%=typeIdentifier%>.js
 ---
 <%  let jsonCardinality = 'base';
     let jsonDefault = 'null';

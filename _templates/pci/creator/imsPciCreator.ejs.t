@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/imsPciCreator.js
+to: <%=pciPath%>/<%=typeIdentifier%>/imsPciCreator.js
 ---
 define(['<%=typeIdentifier%>/creator/widget/Widget'], function (Widget) {
     'use strict';
