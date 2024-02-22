@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=extension%>/scripts/install/RegisterPci<%=typeIdentifier.charAt(0).toUpperCase()%><%=typeIdentifier.substring(1)%>.php
+to: <%=root%>/<%=extension%>/scripts/install/RegisterPci<%=h.capitalize(typeIdentifier)%>.php
 ---
 <?php
 
@@ -7,7 +7,7 @@ namespace oat\<%=extension%>\scripts\install;
 
 use oat\taoQtiItem\model\portableElement\action\RegisterPortableElement;
 
-class RegisterPci<%=typeIdentifier.charAt(0).toUpperCase()%><%=typeIdentifier.substring(1)%> extends RegisterPortableElement
+class RegisterPci<%=h.capitalize(typeIdentifier)%> extends RegisterPortableElement
 {
     protected function getSourceDirectory()
     {
