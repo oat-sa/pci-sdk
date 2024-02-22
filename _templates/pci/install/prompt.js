@@ -1,7 +1,6 @@
-const path = require('path');
-const fs = require('fs');
+const { validatePath, validateIdentifier } = require('../../../helpers/validators.js');
 
-const reIdentifier = /^[_a-zA-Z][_a-zA-Z0-9]*$/;
+const path = require('path');
 
 let root = '';
 
@@ -12,9 +11,9 @@ module.exports = [
         message: 'Where is TAO installed (path)?',
         initial: '.',
         validate: value => {
-            const resolved = path.resolve(value);
-            if (!fs.existsSync(resolved)) {
-                return `${resolved} doesn't seems to exist`;
+            const result = validatePath(value);
+            if (result !== true) {
+                return result;
             }
             root = value;
             return true;
@@ -25,12 +24,13 @@ module.exports = [
         name: 'extension',
         message: "What's the extension name?",
         validate: value => {
-            if (!reIdentifier.test(value)) {
-                return `${value} is not a valid identifier`;
+            const result = validateIdentifier(value);
+            if (result !== true) {
+                return result;
             }
             const resolved = path.resolve(root, value);
-            if (!fs.existsSync(resolved)) {
-                return `There is not extension named${resolved} doesn't seems to exist`;
+            if (validatePath(resolved) !== true) {
+                return `There is no extension named ${value}`;
             }
             return true;
         }
@@ -39,11 +39,6 @@ module.exports = [
         type: 'input',
         name: 'typeIdentifier',
         message: "What's the PCI typeIdentifier?",
-        validate: value => {
-            if (!reIdentifier.test(value)) {
-                return `${value} is not a valid identifier`;
-            }
-            return true;
-        }
+        validate: validateIdentifier
     }
 ];
