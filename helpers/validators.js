@@ -8,7 +8,7 @@ module.exports = {
     validatePath(value) {
         const resolved = path.resolve(value);
         if (!fs.existsSync(resolved)) {
-            return `${resolved} doesn't seems to exist`;
+            return `${resolved} doesn't seem to exist!`;
         }
         return true;
     },
