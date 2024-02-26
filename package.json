@@ -1,6 +1,6 @@
 {
     "name": "@oat-sa/pci-sdk",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "displayName": "PCI Development Kit for TAO",
     "description": "PCI Software Development Kit",
     "files": [
@@ -14,7 +14,8 @@
     "scripts": {
         "pci:runtime": "hygen pci runtime",
         "pci:creator": "hygen pci creator",
-        "pci:install": "hygen pci install"
+        "pci:installer": "hygen pci installer",
+        "pci:migration": "hygen pci migration"
     },
     "author": {
         "name": "Open Assessment Technologies"

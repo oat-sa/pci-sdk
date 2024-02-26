@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/imsPciCreator.json
+to: <%=pciPath%>/<%=typeIdentifier%>/imsPciCreator.json
 ---
 {
     "model": "IMSPCI",

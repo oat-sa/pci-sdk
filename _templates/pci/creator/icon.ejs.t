@@ -1,5 +1,5 @@
 ---
-to: <%=root%>/<%=typeIdentifier%>/icon.svg
+to: <%=pciPath%>/<%=typeIdentifier%>/icon.svg
 ---
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32" xml:space="preserve">
     <rect style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000;stroke-width:.96633393;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" width="29.034" height="29.034" x="1.483" y="1.483" ry="3.184"/>
