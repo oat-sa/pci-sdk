@@ -21,11 +21,11 @@ If you use the same `path` and `typeIdentifier` than the runtime it will generat
 ### Add a TAO install script for a PCI
 
 ```
-npm run pci:install
+npm run pci:installer
 ```
 
 ### Add a TAO migration script for a PCI
 
 ```
-npm run pci:update
+npm run pci:migration
 ```
