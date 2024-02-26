@@ -1,6 +1,6 @@
 {
     "name": "@oat-sa/pci-sdk",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "displayName": "PCI Development Kit for TAO",
     "description": "PCI Software Development Kit",
     "files": [
