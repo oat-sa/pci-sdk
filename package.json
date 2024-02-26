@@ -15,7 +15,7 @@
         "pci:runtime": "hygen pci runtime",
         "pci:creator": "hygen pci creator",
         "pci:installer": "hygen pci installer",
-        "pci:update": "hygen pci update"
+        "pci:migration": "hygen pci migration"
     },
     "author": {
         "name": "Open Assessment Technologies"
